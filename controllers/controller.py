@@ -4,6 +4,6 @@ from models.order_list import orders
 
 @app.route('/orders')
 def index():
-    return render_template('index.html', title='Home', order=orders)
+    return render_template('index.html', title='Orders', orders=orders)
 
 

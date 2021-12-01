@@ -5,10 +5,9 @@
     <body>
         <h1>List of Orders</h1>
             
-        {% for task in tasks %}
+        {% for order in orders %}
         <div>
-                <p>{{order.name}}: <b> {{order.date}} </b> <b> {{order.quantity}} </b> <b> {{order.product_name}} </b> <b> {{order.product_size}} </b> <b> {{order.product_price}} </b>
-                    {{order.done}}
+                <p>{{order.name}} on the {{order.date}} has ordered {{order.quantity}} {{order.product_name}} with the size {{order.product_size}} which cost {{order.product_price}}.
                 </p>
         </div>
         {% endfor %}
