@@ -1,4 +1,4 @@
-class Task():
+class Order():
 
     def __init__(self, name, date, quantity, product_name, product_size, product_price):
         self.name = name

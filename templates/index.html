@@ -7,8 +7,8 @@
             
         {% for task in tasks %}
         <div>
-                <p>{{task.name}}: <b> {{task.date}} </b> <b> {{task.quantity}} </b> <b> {{task.product_name}} </b> <b> {{task.product_size}} </b> <b> {{task.product_price}} </b>
-                    {{task.done}}
+                <p>{{order.name}}: <b> {{order.date}} </b> <b> {{order.quantity}} </b> <b> {{order.product_name}} </b> <b> {{order.product_size}} </b> <b> {{order.product_price}} </b>
+                    {{order.done}}
                 </p>
         </div>
         {% endfor %}
