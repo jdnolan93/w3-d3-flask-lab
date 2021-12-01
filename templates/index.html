@@ -2,15 +2,15 @@
     <head>
         <title>Jamie's Shoe Shop</title>
     </head>
-        <body>
-            <h1>List of Orders</h1>
+    <body>
+        <h1>List of Orders</h1>
             
-            {% for task in tasks %}
-            <div>
-                <p>
-                    #INSERT INFO HERE
+        {% for task in tasks %}
+        <div>
+                <p>{{task.name}}: <b> {{task.date}} </b> <b> {{task.quantity}} </b> <b> {{task.product_name}} </b> <b> {{task.product_size}} </b> <b> {{task.product_price}} </b>
+                    {{task.done}}
                 </p>
-            </div>
-            {% endfor %}
-        </body>
+        </div>
+        {% endfor %}
+    </body>
 </html>

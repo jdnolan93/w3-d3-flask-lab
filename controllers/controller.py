@@ -4,6 +4,6 @@ from models.order_list import tasks
 
 @app.route('/tasks')
 def index():
-    return render_template(#insert something here)
+    return render_template('index.html', title='Home', task=tasks)
 
 
