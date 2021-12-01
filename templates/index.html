@@ -3,11 +3,11 @@
         <title>Jamie's Shoe Shop</title>
     </head>
     <body>
-        <h1>List of Orders</h1>
+        <h1>Jamie's Shoe Shop</h1>
             
         {% for order in orders %}
         <div>
-                <p>{{order.name}} on the {{order.date}} has ordered {{order.quantity}} {{order.product_name}} with the size {{order.product_size}} which cost {{order.product_price}}.
+                <p> On the {{order.date}}, {{order.name}} ordered {{order.quantity}} {{order.product_name}}s (Size {{order.product_size}}) costing {{order.product_price}} pounds.
                 </p>
         </div>
         {% endfor %}
