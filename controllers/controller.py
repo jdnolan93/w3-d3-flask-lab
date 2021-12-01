@@ -3,6 +3,10 @@ from flask import render_template
 from models import order
 from models.order_list import orders
 
+@app.route('/')
+def start():
+    return "Welcome to Jamie's Shoe Shop!"
+
 @app.route('/orders')
 def index():
     return render_template('index.html', title='Orders', orders=orders)
