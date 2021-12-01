@@ -1,7 +1,9 @@
 from app import app
 from flask import render_template
-from models.stock_list import tasks
+from models.order_list import tasks
 
-@app.route('/')
+@app.route('/tasks')
 def index():
-    return render_template("Welcome to Jamie's shoe shop")
+    return render_template(#insert something here)
+
+
