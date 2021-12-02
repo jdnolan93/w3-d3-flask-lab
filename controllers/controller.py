@@ -14,4 +14,4 @@ def index():
 @app.route('/orders/<index>')
 def specific_order(index):
     order = orders[int(index)]
-    return render_template('order.html', title='Specific', order=order)
+    return render_template('order.html', title='Specific', order=order(index))
