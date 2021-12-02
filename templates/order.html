@@ -1,16 +1,15 @@
-<!-- <html>
+<html>
     <head>
-        Jamie's Shoe Shop
+        <title>Jamie's Shoe Shop</title>
     </head>
     <body>
-        <h1> Jamie's Shoe Shop</h1>
-
-        {% for order in orders %}
+        <h1>Jamie's Shoe Shop</h1>
+            
         <div>
-            <p>
-            <a href="orders.index">Index</a>
-            </p>
+                <p> On the {{order.date}}, {{order.name}} ordered {{order.quantity}} {{order.product_name}}s (Size {{order.product_size}}) costing {{order.product_price}} pounds.
+                </p>
         </div>
+        
         {% endfor %}
     </body>
-</html> -->
+</html>
